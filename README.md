@@ -15,3 +15,9 @@ En este trabajo práctico se introducen los conceptos de selectores, atributos y
 - Adaptación de estilos para replicar la noticia original.
 - Utilización de selectores en el archivo CSS.
 - Url noticia: https://www.infobae.com/deportes/2023/04/29/el-recorte-salarial-que-sufrira-enzo-fernandez-por-la-crisis-en-el-chelsea/#:~:text=La%20instituci%C3%B3n%20inglesa%20viene%20de,Raheem%20Sterling%20(56%20millones).
+
+## TP Flexbox (Clase 6)
+Se realizo lo requerido en el enunciado del TP, los commits y push se realizaron directamente sobre la rama Main.
+Se creo un directorio "docs" para publicar la pagina en Github Pages utlizando la opción "main/docs" ya que había un error al intentar publicarla desde el "main/root".
+
+Url: https://aledepetris.github.io/lppa-noticia/
