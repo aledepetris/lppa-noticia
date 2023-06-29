@@ -138,7 +138,7 @@ formulario.addEventListener('submit', function (event) {
         city === '' || postalCode <= 0 || idNumber <= 0 || password === '' ||
         confirmPassword === '') {
         alert('Por favor, complete todos los campos correctamente antes de enviar el formulario.');
-    } else if (passwordInput != confirmPasswordInput) {
+    } else if (passwordInput.value != confirmPasswordInput.value) {
         alert('Los passwords no coinciden');
     } else {
         var mensaje = 'Se envían los datos confirmados:\n\n';
