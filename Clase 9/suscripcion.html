@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING NEWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="suscripcion.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="assets/logo.png" alt="infobae">
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+        <nav class="topnav">
+            <a href="./index.html">Últimas Noticias</a></li>
+            <a href="#">Política</a></li>
+            <a href="#">Economía</a></li>
+            <a href="#">Sociedad</a></li>
+            <a href="#">Deportes</a></li>
+            <a href="#">Mundo</a></li>
+            <a href="#">Policiales</a></li>
+            <a href="#">Tendencias</a></li>
+            <a href="#">Teleshow</a></li>
+            <a href="#">Educación</a></li>
+            <a href="./suscripcion.html">Suscripción</a></li>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <div id="popupContainer">
+            </div>
+            <div id="popupResponse">
+            </div>
+            <form id="registrationForm">
+                <div class="welcomeSection">
+                    <h4 class="welcomeHeading">¡Bienvenido! </h4> <label class="userNameLabel"
+                        id="welcomeMessage"></label>
+                </div>
+                <br>
+                <div class="titleSection">
+                    <h3 class="formTitle">Complete los datos para Suscribirse</h3>
+                </div>
+                <br>
+                <div class="formContainer">
+                    <div class="leftColumn">
+                        <label for="fullName">Nombre completo</label>
+                        <input type="text" id="fullName" name="Nombre completo" placeholder="Nombre...">
+                        <span id="fullNameError" data-name="Error en nombre" class="error"></span>
+
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="email" placeholder="Email..." />
+                        <span id="emailError" data-name="Error en Email" class="error"></span>
+
+                        <label for="age">Edad</label>
+                        <input type="number" name="Edad" id="age" placeholder="Edad..." />
+                        <span id="ageError" data-name="Error en edad" class="error"></span>
+
+                        <label for="phone">Teléfono</label>
+                        <input type="number" name="Telefono" id="phone" placeholder="Teléfono..." />
+                        <span id="phoneError" data-name="Error en teléfono" class="error"></span>
+
+                        <label for="address">Dirección</label>
+                        <input type="text" id="address" name="Direccion" placeholder="Dirección...">
+                        <span id="addressError" data-name="Error en dirección" class="error"></span>
+                    </div>
+
+                    <div class="rightColumn">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="Ciudad" placeholder="Ciudad...">
+                        <span id="cityError" data-name="Error en ciudad" class="error"></span>
+
+                        <label for="postalCode">Código Postal</label>
+                        <input type="number" id="postalCode" name="CP" placeholder="Código Postal...">
+                        <span id="postalCodeError" data-name="Error en código postal" class="error"></span>
+
+                        <label for="idNumber">DNI</label>
+                        <input type="number" id="idNumber" name="DNI" placeholder="DNI...">
+                        <span id="idNumberError" data-name="Error en DNI" class="error"></span>
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" />
+                        <span id="passwordError" data-name="Error en contraseña" class="error"></span>
+
+                        <label for="confirmPassword">Confirmar contraseña</label>
+                        <input type="password" id="confirmPassword" />
+                        <span id="confirmPasswordError" data-name="Error en confirmar contraseña" class="error"></span>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="submitButtonDiv">
+                    <input type="submit" value="Registrarse" />
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img class="logo" src="assets/logo.png" alt="infobae">
+            </div>
+            <div class="social-links-container">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="links-container">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p><small>&copy; 2023 Todos los derechos reservados</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const topnav = document.querySelector('.topnav');
+
+        menuToggle.addEventListener('click', function () {
+            topnav.classList.toggle('responsive');
+        });
+    </script>
+    <script src="subscripcion.js"></script>
+</body>
+
+</html>
