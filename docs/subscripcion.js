@@ -150,8 +150,37 @@ formulario.addEventListener('submit', function (event) {
         mensaje += 'Ciudad: ' + city + '\n';
         mensaje += 'Código Postal: ' + postalCode + '\n';
         mensaje += 'DNI: ' + idNumber + '\n';
-    
-        alert(mensaje);
+            
+        var confirm = window.confirm(mensaje);
+
+        if (confirm) {
+            fetch('https://jsonplaceholder.typicode.com/users', {
+                method: 'POST',
+                body: JSON.stringify({
+                id:1,
+                fullName : fullNameInput.value,
+                email : emailInput.value,
+                age : parseInt(ageInput.value),
+                phone : parseInt(phoneInput.value),
+                address : addressInput.value,
+                city : cityInput.value,
+                postalCode : parseInt(postalCodeInput.value),
+                idNumber : parseInt(idNumberInput.value),
+                password : passwordInput.value,
+                confirmPassword : confirmPasswordInput.value                                       
+                }),
+                headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+            .then((response) => response.json())
+            .then((json) => {
+                window.alert("Registro exitoso con los siguientes datos:\n " + JSON.stringify(json))
+            })
+            .catch((error) => {
+                window.alert("Hubo un error al intentar registrarse..");
+            }); 
+        }
     }
 });
 
