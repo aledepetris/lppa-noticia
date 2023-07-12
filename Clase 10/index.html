@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING NEWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="assets/logo.png" alt="infobae">
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+        <nav class="topnav">
+            <a href="./index.html">Últimas Noticias</a></li>
+            <a href="#">Política</a></li>
+            <a href="#">Economía</a></li>
+            <a href="#">Sociedad</a></li>
+            <a href="#">Deportes</a></li>
+            <a href="#">Mundo</a></li>
+            <a href="#">Policiales</a></li>
+            <a href="#">Tendencias</a></li>
+            <a href="#">Teleshow</a></li>
+            <a href="#">Educación</a></li>
+            <a href="./suscripcion.html">Suscripción</a></li>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="column">
+                <article class="card">
+                    <h2>Street Fighter 6</h2>
+                    <h5>El regreso de una franquicia legendaria</h5>
+                    <div class="noticeimg">
+                        <img src="assets/noti1.avif" alt="gamer">
+                    </div>
+                    <figcaption>Ryu personaje mítico de Street Fighter</figcaption>
+                    <p>
+                        El mundo de los videojuegos no fue el único por el que Capcom decidió embarcarse con Street Fighter. Tuvo su amplio recorrido por el cine con la famosa película de Jean-Claude Van Damme, las series animadas (algunas con auge en los 90 y otra importante en 2014), los cómics (con muchas tiras numerosas de UDON Entertainment), y también libros, que varían entre novelas y libros de arte.
+                    </p>
+                    <a href="#">Leer mas..</a>
+                </article>
+
+                <article class="card">
+                    <h2>Feria del Libro</h2>
+                    <h5>Darío Sztajnszrajber explicó los ocho motivos por los que "el amor es imposible"</h5>
+                    <div class="noticeimg">
+                        <img src="assets/noti2.avif" alt="gamer">
+                    </div>
+                    <figcaption>Darío Sztajnszrajber hablando en la feria del libro</figcaption>
+                    <p>
+                        El filósofo y divulgador presentó su último libro en la sala más grande de La Rural, que estaba repleta. El amor está en el centro de esta obra, que aporta miradas innovadoras sobre cómo se construyen las parejas.
+                    </p>
+                    <a href="#">Leer mas..</a>
+                </article>
+
+
+                <article class="card">
+                    <h2>Ayudando al enemigo</h2>
+                    <h5>Europa sostiene dictaduras latinoamericanas que apoyan a Rusia</h5>
+                    <div class="noticeimg">
+                        <img src="assets/noti3.avif" alt="gamer">
+                    </div>
+                    <figcaption>Vladimir Putin y el dictador cubano Miguel Diaz-Canel</figcaption>
+                    <p>
+                        Por la invasión de Rusia a Ucrania el mundo vive hoy la “Primera Guerra Global” en la que solo hay dos grupos, el del invasor integrado por dictaduras y de la defensa de la libertad de los países democráticos. El eje de confrontación es nuevamente dictadura contra democracia y Europa es el frente de batalla inmediato al territorio ucraniano donde se combate hoy. Las dictaduras latinoamericanas bajo mando de Cuba en Venezuela, Bolivia y Nicaragua son socias y operadoras de Rusia en esta guerra, mientas Europa las ayuda económica y políticamente. Es la increíble ayuda al enemigo.
+                    </p>
+                    <a href="#">Leer mas..</a>
+                </article>
+
+                <article class="card">
+                    <h2>Gamer</h2>
+                    <h5>La nueva ficción argentina sobre esports</h5>
+                    <div class="noticeimg">
+                        <img src="assets/noti4.avif" alt="gamer">
+                    </div>
+                    <figcaption>Elenco de la serie</figcaption>
+                    <p>
+                        No es una novedad que los videojuegos están formando parte importante de la industria del entretenimiento más allá de los juegos en sí. De a poco van acaparando la música, el cine, las películas y las series. Así era cuestión de tiempo para que el mundo de los esports también comience a contar historias. Hace unos días se estrenó Gamer, una historia de ficción argentina que tiene como eje central a los deportes electrónicos, y que narra la historia de un equipo amateur y su sueño de consagrarse en un campeonato argentino.
+                    </p>
+                    <a href="#">Leer mas..</a>
+                </article>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img class="logo" src="assets/logo.png" alt="infobae">
+            </div>
+            <div class="social-links-container">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="links-container">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p><small>&copy; 2023 Todos los derechos reservados</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const topnav = document.querySelector('.topnav');
+
+        menuToggle.addEventListener('click', function () {
+            topnav.classList.toggle('responsive');
+        });
+    </script>
+</body>
+
+</html>
